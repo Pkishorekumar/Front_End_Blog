@@ -1,0 +1,40 @@
+[
+ 
+    {
+        "id": 1,
+        "url":"https://assets-prd.ignimgs.com/2022/09/22/deathnote-1663870021590.jpg?fit=bounds&width=1280&height=720" ,
+        "caption": "Death Note",
+        "about": "Death Note is a now classic anime that follows Light Yagami, a teen who gains supernatural abilities via the Death Note. A book that grants the user the ability to kill anyone they want, just by writing that person’s name in the book.",
+        "category": "Anime",
+        "date": "2007-10-21",
+        "link":""
+    },
+    {
+        "id": 2,
+        "url":"https://assets-prd.ignimgs.com/2022/09/22/attack-on-colossal-titan-1663870328553.jpg?fit=bounds&width=1280&height=720" ,
+        "caption": "Attack on Titan",
+        "about": "On that day, humanity was reminded of the fear they held for the titans.three friends, Eren Yeager, Mikasa Ackerman, and Armin Arlert. they fight alongside humanity's greatest soldiers against gargantuan ",
+        "category": "Anime",
+        "date": "2013-09-28",
+        "link":""
+    },
+    {
+        "id": 3,
+        "url":"https://oyster.ignimgs.com/wordpress/stg.ign.com/2019/11/hunter-x-hunter.jpeg?fit=bounds&width=1280&height=720" ,
+        "caption": "Hunter x Hunter",
+        "about": "He leaves the island on a quest to find his long-forgotten father who had left him behind. His only clue? He’s a world-famous licensed Hunter -- so Gon sets off to take the deadly exam and become a Hunter himself.",
+        "category": "Anime",
+        "date": "July 26, 1998",
+        "link":""
+    },
+    {
+        "id": 4,
+        "url":"https://oyster.ignimgs.com/wordpress/stg.ign.com/2019/11/one-piece.png?fit=bounds&width=1280&height=720" ,
+        "caption": "One Piece",
+        "about": "The world building, the deep characters, the hilarious adventure, and the amazing adaptation that sometimes beats out the manga catapults this series to the top of shonen anime history.",
+        "category": "Anime",
+        "date": "1999",
+        "link":""
+    }
+
+]
