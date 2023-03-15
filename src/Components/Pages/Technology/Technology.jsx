@@ -1,11 +1,19 @@
 import React from 'react'
 import Toppost from '../../TopPosts/Toppost'
-import tech from '../.././API-Data/Technology.json'
+// import tech from '../.././API-Data/Technology.json'
+import {TechData} from '../.././API-Data/Technology'
 // import Pagedata from '../.././API-Data/pages.json'
+import { useNavigate } from 'react-router-dom'
+import Genericpage from '../../Genericpage'
 
 const Technology = () => {
 
-
+  const Navigate = useNavigate()
+  const handlenav=(id,tech)=>{
+    Navigate(`/Details/${id}`,{
+      state: {Details : tech}
+    })
+  }
 
   return (
     <div>
@@ -13,7 +21,7 @@ const Technology = () => {
   
 
 
-       <div className='tech-container'>
+       {/* <div className='tech-container'>
 
   
 
@@ -29,6 +37,25 @@ const Technology = () => {
         </div>
       ))}
      
+       </div> */}
+
+       <div>
+        {TechData.map((tech)=>{
+          return(
+            <div key={tech.id} onClick={()=>handlenav(tech.id , tech)}>
+
+            <Genericpage
+             
+             id={tech.id}
+             url={tech.url}
+             caption={tech.caption}
+             about={tech.about}
+  
+            />
+  
+          </div>
+          )
+        })}
        </div>
 
 

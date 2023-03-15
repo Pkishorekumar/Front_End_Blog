@@ -10,6 +10,7 @@ import Food from '../.././Components/Pages/Food/Food';
 import Tokyo from '../.././Components/Cardinformation/Tokyo';
 import Demon from '../.././Components/Cardinformation/Demon';
 import Naruto from '../.././Components/Cardinformation/Naruto';
+import Genericinfo from '../.././Components/Genericinfo'
 // import Dropdown from 'react-bootstrap/Dropdown';
 // import { MDBDropdown, MDBDropdownMenu, MDBDropdownToggle, MDBDropdownItem, MDBDropdownLink, MDBContainer,dropdownActive,setDropdownActive } from 'mdb-react-ui-kit';
 
@@ -94,6 +95,7 @@ const Router = () => {
   <Route path='/tokyoinfo' element={<Tokyo/>}/>
   <Route path='/narutoinfo' element={<Naruto/>}/>
   <Route path='/demoninfo' element={<Demon/>}/>
+  <Route path='/Details/:id' element={<Genericinfo/>}/>
 </Routes>
 
 </BrowserRouter>

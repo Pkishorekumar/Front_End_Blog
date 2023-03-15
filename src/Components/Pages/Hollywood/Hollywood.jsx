@@ -1,13 +1,24 @@
 import React from 'react'
-import Holly from '../.././API-Data/Hollywood.json';
+// import Holly from '../.././API-Data/Hollywood.json';
 import Toppost from '../../TopPosts/Toppost';
+import {HollyData} from '../.././API-Data/Hollywood'
+import { useNavigate } from 'react-router-dom';
+import Genericpage from '../../Genericpage';
 
 const Hollywood = () => {
+
+
+  const Navigate = useNavigate()
+const handlenav=(id,item)=>{
+  Navigate(`/Details/${id}`,{
+    state: {Details : item}
+  })
+}
   return (
     <div>
       <h1 className='Title-one'><span className='page-title'>Holly</span>wood</h1>
    
-       <div className='holly-continer'>
+       {/* <div className='holly-continer'>
        {Holly.map(Holly =>(
          <div key={Holly.id} className='Holly-sub-container'>
             
@@ -20,6 +31,26 @@ const Hollywood = () => {
           </div>
          </div>
        ))}
+       </div> */}
+       <div>
+        {HollyData.map((Holly)=>{
+          return(
+            <div key={Holly.id} onClick={()=>handlenav(Holly.id , Holly)}>
+
+            <Genericpage
+             
+            id={Holly.id}
+            url={Holly.url}
+            title={Holly.title}
+            imdb={Holly.imdb}
+            Genre={Holly.Genre}
+            date={Holly.date}
+  
+            />
+  
+          </div>
+          )
+        })}
        </div>
 
 

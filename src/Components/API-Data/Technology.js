@@ -1,4 +1,4 @@
- [
+ export const TechData=[
         {
             "id":1,
             "url":"https://th.bing.com/th/id/OIP.W3eC4Mtto2XSm2EvviUqBQHaEK?w=294&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
